@@ -1,0 +1,77 @@
+<html><head>
+    <title>Formulario HTML5</title>
+</head>
+<body>
+    <form id="orderForm" action="" method="get">
+        <h3>Formulario de Compra</h3>
+        <fieldset>
+            <legend>Orden</legend>
+            <ul>
+                <li>
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" required="required" min="1" max="10" maxlength="2" autofocus="autofocus">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de Contacto</legend>
+            <ul>
+                <li>
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" placeholder="nombre@ejemplo.com" required="required" maxlength="50">
+                </li>
+                <li>
+                    <label for="sitio">Sitio Web</label>
+                    <input type="url" name="sitio" id="sitio" placeholder="http://www.ejemplo.com/" required="required" maxlength="100">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de pago</legend>
+            <ul>
+                <li>
+                    <label for="nombre">Name</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre Apellido" required="required" maxlength="50">
+                </li>
+                <li>
+                    <label for="direccion">Dirección</label>
+                    <textarea name="direccion" id="direccion" placeholder="Calle, Avenida, No." required="required" maxlength="150"></textarea>
+                </li>
+                <li>
+                    <label for="codigo">Código postal</label>
+                    <input type="text" name="codigo" id="codigo" placeholder="Codigo Postal" required="required" maxlength="20">
+                </li>
+                <li>
+                    <label for="pais">País</label>
+                    <select name="pais" id="pais">
+                        <option>Colombia</option>
+                        <option>Costa Rica</option>
+                        <option>España</option>
+                        <option>Honduras</option>
+                        <option>México</option>
+                        <option>Venezuela</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="telefono">Teléfono <em>(opcional)</em></label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="(999) 9999-9999" maxlength="20">
+                </li>
+                <li>
+                    <label for="tarjeta">Número de Tarjeta</label>
+                    <input type="text" name="tarjeta" id="tarjeta" placeholder="No. Tarjeta" required="required" maxlength="30" pattern="[\d\ ]{12,}">
+                </li>
+                <li>
+                    <label for="confirmacion">Código de Confirmación</label>
+                    <input type="number" name="confirmacion" id="confirmacion" placeholder="Confirmacion" required="required" maxlength="3" pattern="\d{3}">
+                </li>
+                <li>
+                <label for="vencimiento">Fecha de Vencimiento</label>
+                <input type="text" name="vencimiento" id="vencimiento" placeholder="YYYY-MM" required="required" pattern="\d{4}-\d{2}" maxlength="7">
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" name="ordenar" value="Ordena ahora">
+    </form>
+
+
+</body></html>
