@@ -34,6 +34,11 @@
         <label for="marca"> marca (opcional)</label>
         <input type="text" name="marca" id="marca" placeholder="marca"  maxlength="20">
     </li>
+    <br><br>
+    <li>
+       <label for="inserte una imagen el objeto"> inserte una imagen del objeto</label>
+       <input type="file" autofocus required="required" >
+    </li>
 
 
 
@@ -41,6 +46,47 @@
 
 </ul>
 </fieldset>
+        <fieldset>
+<legend>datos personales</legend>
+<ul>
+    <li>
+        <label for="nombre completo">nombre completo</label>
+        <input type="text" name="nombre completo" id="nombre" placeholder="nombre completo" required="required" maxlength="40">
+    </li>
+    <br><br>
+    <li>
+        <label for="correo electronico">correo electronico</label>
+        <input type="email" name="correo" id="correo" placeholder="nombre@ejemplo.com" required="required" maxlength="50">
+    </li>
+    <br><br>
+    <li>
+        <label for="telefono">telefono (opcional)</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="(+57) 999 9999 999" maxlength="20">
+    </li>
+    <br><br>
+  
+</ul>
+</fieldset>
+<fieldset>
+    <legend>datos adicionales</legend>
+    <ul>
+        <li>
+            <label for="fecha de encuentro">Fecha de encuentro</label>
+            <input type="text" name="encuentro" id="encuentro" placeholder="YYYY-MM-DD" required="required" pattern="\d{4}-\d{2}-\d{2}" maxlength="10">
+        </li>
+        <br><br>
+        <li>
+            <label for="lugar de encuentro">lugar de encuentro</label>
+            <input name="direccion" id="direccion" placeholder="Calle, Avenida, No." required="required" maxlength="150">
+        </li>
+        <br><br>
+
+             
+    </ul>
+</fieldset>
+<P  ALIGN=right><input type="submit" name="enviar formulario" value="enviar formulario"></P>
+<p ALIGN="left" ><a href="PROYECTO.html">VOLVER PAGINA PRINCIPAL</a></p>
+
 
 </form>
 </body>
