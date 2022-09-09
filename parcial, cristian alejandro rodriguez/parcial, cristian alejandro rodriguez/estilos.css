@@ -1,0 +1,25 @@
+header{
+   
+    text-align: center;
+}
+
+  .columnas {
+    
+    display: flex;
+    flex-flow: row;
+  }
+  
+  .item {
+    flex: 1 1 auto;  
+    
+  }
+  
+ 
+  
+ 
+  *{
+    padding: 5pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #D7C0AE;
+    letter-spacing: 0.5pt;
+  }
